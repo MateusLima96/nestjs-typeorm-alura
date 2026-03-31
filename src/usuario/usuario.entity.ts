@@ -6,9 +6,9 @@ export class UsuarioEntity {
   id: string;
   @Column({name: 'nome', length: 100, nullable: false})
   nome: string;
-  @Column({name: 'nome', length: 70, nullable: false})
+  @Column({name: 'email', length: 70, nullable: false})
   email: string;
-  @Column({name: 'nome', length: 255, nullable: false})
+  @Column({name: 'senha', length: 255, nullable: false})
   senha: string;
 
   @CreateDateColumn({name: 'created_at'})
